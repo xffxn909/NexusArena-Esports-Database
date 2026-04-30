@@ -1,0 +1,157 @@
+/* ============================================================
+   NEXUS ARENA — Clean Turquoise-Only Theme
+   Single accent color: #00d4ff
+   ============================================================ */
+
+/* ── ROOT ───────────────────────────────────────────────── */
+.root {
+    -fx-background-color: #080810;
+    -fx-font-family: "Segoe UI", "Inter", Roboto, sans-serif;
+    -fx-font-size: 13px;
+}
+
+/* ── KILL ALL FOCUS RINGS ───────────────────────────────── */
+* {
+    -fx-focus-color: transparent;
+    -fx-faint-focus-color: transparent;
+}
+.focused {
+    -fx-background-insets: 0;
+    -fx-focus-color: transparent;
+    -fx-faint-focus-color: transparent;
+}
+*:focused {
+    -fx-effect: null;
+}
+.button:focused {
+    -fx-background-insets: 0;
+    -fx-border-color: transparent;
+}
+
+/* ── GLASS INPUT ────────────────────────────────────────── */
+.glass-input {
+    -fx-background-color: rgba(255,255,255,0.06);
+    -fx-border-color: rgba(0,212,255,0.15);
+    -fx-border-radius: 8;
+    -fx-background-radius: 8;
+    -fx-padding: 8 12;
+    -fx-text-fill: #ffffff;
+    -fx-prompt-text-fill: #4a4a6a;
+    -fx-font-size: 12px;
+}
+.glass-input:focused {
+    -fx-border-color: #00d4ff;
+    -fx-border-width: 1;
+    -fx-effect: null;
+}
+
+/* ── SCROLLBAR ──────────────────────────────────────────── */
+.scroll-pane {
+    -fx-background-color: transparent;
+    -fx-background-insets: 0;
+}
+.scroll-pane > .viewport {
+    -fx-background-color: transparent;
+}
+.scroll-bar:vertical, .scroll-bar:horizontal {
+    -fx-background-color: transparent;
+    -fx-pref-width: 6;
+    -fx-pref-height: 6;
+}
+.scroll-bar .track {
+    -fx-background-color: transparent;
+}
+.scroll-bar .thumb {
+    -fx-background-color: rgba(0,212,255,0.12);
+    -fx-background-radius: 10;
+}
+.scroll-bar .thumb:hover {
+    -fx-background-color: rgba(0,212,255,0.25);
+}
+.scroll-bar .increment-button,
+.scroll-bar .decrement-button {
+    -fx-background-color: transparent;
+    -fx-padding: 0;
+}
+.scroll-bar .increment-arrow,
+.scroll-bar .decrement-arrow {
+    -fx-shape: "";
+    -fx-padding: 0;
+}
+
+/* ── COMBO BOX ──────────────────────────────────────────── */
+.combo-box {
+    -fx-background-color: rgba(255,255,255,0.06);
+    -fx-border-color: rgba(0,212,255,0.15);
+    -fx-border-radius: 8;
+    -fx-background-radius: 8;
+    -fx-padding: 2;
+}
+.combo-box .list-cell {
+    -fx-text-fill: #ffffff;
+    -fx-background-color: transparent;
+    -fx-font-size: 12px;
+}
+.combo-box-popup .list-view {
+    -fx-background-color: #0d0e1a;
+    -fx-border-color: rgba(0,212,255,0.15);
+    -fx-border-radius: 8;
+    -fx-background-radius: 8;
+}
+.combo-box-popup .list-view .list-cell {
+    -fx-background-color: #0d0e1a;
+    -fx-text-fill: #ffffff;
+    -fx-padding: 8 12;
+}
+.combo-box-popup .list-view .list-cell:hover {
+    -fx-background-color: rgba(0,212,255,0.08);
+}
+.combo-box-popup .list-view .list-cell:selected {
+    -fx-background-color: rgba(0,212,255,0.15);
+    -fx-text-fill: #00d4ff;
+}
+.combo-box .arrow-button {
+    -fx-background-color: transparent;
+}
+.combo-box .arrow {
+    -fx-background-color: #8b8ba3;
+}
+
+/* ── TEXT AREA ───────────────────────────────────────────── */
+.text-area {
+    -fx-background-color: transparent;
+    -fx-font-family: "Consolas", monospace;
+}
+.text-area .content {
+    -fx-background-color: rgba(255,255,255,0.04);
+    -fx-border-color: rgba(0,212,255,0.15);
+    -fx-border-radius: 10;
+    -fx-background-radius: 10;
+}
+.text-area:focused .content {
+    -fx-border-color: #00d4ff;
+}
+.text-area .scroll-pane {
+    -fx-background-color: transparent;
+}
+
+/* ── TOOLTIP ────────────────────────────────────────────── */
+.tooltip {
+    -fx-background-color: rgba(13,14,26,0.95);
+    -fx-text-fill: #ffffff;
+    -fx-padding: 10 16;
+    -fx-background-radius: 10;
+    -fx-font-size: 12px;
+    -fx-border-color: rgba(0,212,255,0.15);
+    -fx-border-radius: 10;
+    -fx-border-width: 1;
+}
+
+/* ── BUTTONS ────────────────────────────────────────────── */
+.button {
+    -fx-cursor: hand;
+    -fx-focus-traversable: false;
+}
+.button:pressed {
+    -fx-opacity: 0.85;
+}
